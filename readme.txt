@@ -12,3 +12,5 @@ git diff	查看修改内容 或者 git diff HEAD --<file>  比较版本库和工
 git reset --hard HEAD^/git reset --hard commit_id
 git log  查看提交历史  git log --pretty=oneline
 git reflog  查看命令历史
+git checkout -- file  丢弃工作区的修改  让这个文件回到最近一次git commit或git add时的状态
+git reset HEAD <file> --> git checkout -- file  添加到了暂存区时，想丢弃修改  
