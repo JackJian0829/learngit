@@ -9,3 +9,6 @@ git add <file>
 git commit -m<message>
 git status  查看状态
 git diff	查看修改内容
+git reset --hard HEAD^/git reset --hard commit_id
+git log  查看提交历史  git log --pretty=oneline
+git reflog  查看命令历史
