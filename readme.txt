@@ -14,3 +14,8 @@ git log  查看提交历史  git log --pretty=oneline
 git reflog  查看命令历史
 git checkout -- file  丢弃工作区的修改  让这个文件回到最近一次git commit或git add时的状态
 git reset HEAD <file> --> git checkout -- file  添加到了暂存区时，想丢弃修改  
+git rm <file> 删除一个文件
+git checkout 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+
+远程仓库
+$ ssh-keygen -t rsa -C "youremail@example.com"   创建SSH Key 生成两个文件 id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥
