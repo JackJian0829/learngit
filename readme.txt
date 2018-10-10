@@ -31,3 +31,42 @@ git add .                               提交被修改的和新
 git add -u     --update          update tracked files    更新所有改变的文件，即提交所有变化的文件
 
 git add -A    --all                  add changes from all tracked and untracked files   提交已被修改和已被删除文件，但是不包括新的文件
+
+
+
+Git提供了一个换行符检查功能（core.safecrlf），可以在提交时检查文件是否混用了不同风格的换行符。这个功能的选项如下：
+
+false - 不做任何检查
+warn - 在提交时检查并警告
+true - 在提交时检查，如果发现混用则拒绝提交
+
+如果你是Windows程序员，且正在开发仅运行在Windows上的项目，可以设置false取消此功能，把回车符记录在库中：
+
+$ git config --global core.autocrlf false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
